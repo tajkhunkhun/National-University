@@ -1,0 +1,17 @@
+{
+  "name": "consulting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/css/main.css -o ./dist/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/css/main.css -o ./dist/output.css --minify"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.1.12",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.12"
+  }
+}

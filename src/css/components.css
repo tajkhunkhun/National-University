@@ -1,0 +1,80 @@
+@layer components {
+	.btn {
+		@apply px-[25px] h-12 text-dark-800 rounded-2xl cursor-pointer text-base font-semibold;
+	}
+	.btn-primary {
+		@apply bg-primary-500 text-white;
+	}
+	.btn-transparent {
+		@apply bg-transparent text-primary-500;
+	}
+	.btn-white {
+		@apply bg-white text-primary-500;
+	}
+	.btn-aqua {
+		@apply bg-aqua-400 text-white;
+	}
+	.btn-primary-outline {
+		@apply bg-transparent text-primary-500 border-2 border-primary-500;
+	}
+	.btn-white-outline {
+		@apply bg-transparent text-white border-2 border-white;
+	}
+
+	.btn-clear {
+		@apply p-0 m-0 bg-transparent border-none h-auto;
+	}
+	.btn-long {
+		@apply h-12 w-90 max-w-full rounded-lg;
+	}
+	.btn-white {
+		@apply bg-white text-primary-500;
+	}
+	.bg-gradient-primary {
+		background: var(--gradient-primary);
+	}
+	.bg-gradient-card {
+		background: var(--gradient-card);
+	}
+	.bg-gradient-icon {
+		background: var(--gradient-icon);
+	}
+
+	/* Swiper Scrollbar Styles */
+	.swiper-scrollbar {
+		@apply bg-aqua-400/17!;
+		position: relative;
+		border-radius: 12px;
+		height: 5px;
+		bottom: -50px !important;
+	}
+
+	.swiper-scrollbar-drag {
+		background: var(--color-aqua-400) !important;
+		border-radius: 10px;
+		height: 100%;
+		position: relative;
+		cursor: grab;
+	}
+
+	.swiper-scrollbar-drag:hover {
+		background: #002a6b;
+	}
+
+	.swiper-scrollbar-drag:active {
+		cursor: grabbing;
+		background: #001f4d;
+	}
+
+	/* Mobile styles */
+	@media (max-width: 768px) {
+		.swiper-scrollbar {
+			height: 8px;
+			margin-top: 15px;
+		}
+
+		.swiper-scrollbar-drag {
+			min-width: 40px;
+		}
+	}
+}

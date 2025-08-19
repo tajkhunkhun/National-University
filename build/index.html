@@ -1,0 +1,1217 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>National University</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="./dist/output.css" rel="stylesheet" />
+	</head>
+	<body>
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			viewBox="0 0 100 100"
+			class="absolute -z-10 opacity-0 pointer-events-none hidden"
+		>
+			<symbol id="icon-academic" viewBox="0 0 30 22" fill="none">
+				<path
+					d="M21.4854 12.5755C21.4854 12.5755 21.4854 18.2971 21.4871 18.3096C21.4871 19.6095 18.5305 20.6632 14.8833 20.6632C11.2361 20.6632 8.27945 19.6095 8.28124 18.2971V12.5755C8.28124 11.2748 11.2327 9.88966 14.8833 9.88966C18.5278 9.88966 21.4854 11.2748 21.4854 12.5755ZM20.8471 18.3096C20.8471 17.8051 18.8181 16.6227 14.8833 16.6227C10.9485 16.6227 8.91945 17.8051 8.91945 18.3096C8.91945 18.8141 10.9485 19.9965 14.8833 19.9965C18.8181 19.9965 20.8471 18.8141 20.8471 18.3096ZM1.78324 8.9603V15.2034C1.59763 15.2962 1.44032 15.4407 1.32879 15.621C1.21725 15.8012 1.15585 16.0101 1.1514 16.2245C1.14694 16.4389 1.19961 16.6504 1.30355 16.8355C1.40749 17.0207 1.55865 17.1721 1.74023 17.2732L0.707274 21.2802C0.707274 21.7952 3.83962 21.7952 3.83962 21.2802L2.80669 17.2732C2.98827 17.1722 3.13943 17.0207 3.24337 16.8356C3.34731 16.6505 3.39998 16.439 3.39553 16.2246C3.39108 16.0102 3.32968 15.8012 3.21814 15.621C3.10661 15.4407 2.94931 15.2962 2.7637 15.2034V9.71736C4.1249 10.7349 5.56662 11.6301 7.07331 12.3934C7.25573 9.46616 11.0895 8.15466 14.8849 8.15466C18.6834 8.15466 22.5108 9.46616 22.69 12.3975C25.0094 11.2107 27.1777 9.72744 29.1448 7.98197C29.1973 7.93227 29.2372 7.86974 29.2607 7.8C29.2843 7.73025 29.2908 7.6555 29.2797 7.58249C29.2685 7.50947 29.2402 7.44048 29.1971 7.38174C29.154 7.32301 29.0975 7.27638 29.0328 7.24605C26.8983 6.6499 20.3444 4.6148 15.3201 0.852982C15.1939 0.754896 15.0407 0.701904 14.8833 0.701904C14.7259 0.701904 14.5726 0.754896 14.4465 0.852982C9.42224 4.6148 2.86836 6.6499 0.73385 7.24605C0.669125 7.27638 0.612665 7.32301 0.569564 7.38175C0.526463 7.44048 0.498076 7.50947 0.486963 7.58249C0.475851 7.6555 0.482362 7.73025 0.505911 7.8C0.529459 7.86974 0.569304 7.93227 0.62185 7.98197C0.91258 8.24039 1.3068 8.57796 1.78324 8.9603Z"
+					fill="white"
+				/>
+			</symbol>
+			<symbol
+				id="icon-finance"
+				width="22"
+				height="23"
+				viewBox="0 0 22 23"
+				fill="none"
+			>
+				<path
+					d="M14.7984 6.73486H6.93529C6.93529 6.73486 1.43066 11.4052 1.43066 16.8553C1.43066 19.9681 3.79778 21.5256 5.36223 21.5256H16.3715C17.9424 21.5256 20.3031 19.9681 20.3031 16.8553C20.3031 11.4052 14.7984 6.73486 14.7984 6.73486ZM11.6523 17.5542V18.8006H10.0814V17.5584C8.92367 17.3454 8.19632 16.638 8.14467 15.611H9.50684C9.57355 16.1501 10.1223 16.4974 10.9164 16.4974C11.648 16.4974 12.1666 16.1458 12.1666 15.6451C12.1666 15.219 11.8309 14.9761 11.0046 14.7929L10.1287 14.6075C8.90215 14.354 8.29961 13.7212 8.29961 12.7049C8.29961 11.6886 8.98393 10.9556 10.0728 10.7149V9.45993H11.6437V10.717C12.7068 10.9514 13.4147 11.6694 13.4492 12.6346H12.1343C12.0676 12.1083 11.5727 11.7567 10.8927 11.7567C10.2127 11.7567 9.72204 12.0806 9.72204 12.5877C9.72204 12.9989 10.0427 13.2269 10.8324 13.4016L11.6437 13.572C12.9973 13.8533 13.5804 14.4243 13.5804 15.4661C13.5804 16.5805 12.8574 17.3262 11.6523 17.5542Z"
+					fill="white"
+				/>
+				<path
+					d="M14.7987 2.06221H12.6253C12.4033 1.81845 12.1321 1.62356 11.8292 1.49017C11.5264 1.35677 11.1986 1.28784 10.8671 1.28784C10.5357 1.28784 10.2079 1.35677 9.90501 1.49017C9.60215 1.62356 9.33096 1.81845 9.109 2.06221H6.93556C6.80752 2.06276 6.68154 2.09421 6.56854 2.15383C6.45554 2.21346 6.35893 2.29947 6.28708 2.4044C6.21522 2.50933 6.17029 2.63003 6.15617 2.75603C6.14205 2.88203 6.15917 3.00954 6.20606 3.12752L6.93556 5.17504H14.7987L15.5282 3.12752C15.5751 3.00954 15.5922 2.88203 15.5781 2.75603C15.564 2.63003 15.519 2.50933 15.4472 2.4044C15.3753 2.29947 15.2787 2.21346 15.1657 2.15383C15.0527 2.09421 14.9267 2.06276 14.7987 2.06221Z"
+					fill="white"
+				/>
+			</symbol>
+			<symbol id="icon-play" viewBox="0 0 56 56" fill="none">
+				<path
+					d="M28.2704 5.42822C40.8634 5.42836 51.0721 15.6379 51.0721 28.231C51.072 40.8239 40.8633 51.0326 28.2704 51.0327C15.6774 51.0327 5.46882 40.8239 5.46863 28.231C5.46863 15.6378 15.6772 5.42822 28.2704 5.42822ZM24.8593 19.8765C24.3678 19.5488 23.7089 19.901 23.7089 20.4917V35.9692C23.7089 36.5599 24.3678 36.9121 24.8593 36.5845L36.4677 28.8462C36.9066 28.5535 36.9064 27.9085 36.4677 27.6157L24.8593 19.8765Z"
+					fill="currentColor"
+				/>
+			</symbol>
+			<symbol id="icon-circle-with-arrow" viewBox="0 0 57 56" fill="none">
+				<path
+					d="M28.7701 4.66671C15.8834 4.66671 5.43673 15.1134 5.43673 28C5.43673 40.8867 15.8834 51.3334 28.7701 51.3334C41.6567 51.3334 52.1034 40.8867 52.1034 28C52.1034 15.1134 41.6567 4.66671 28.7701 4.66671Z"
+					fill="white"
+					stroke="black"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+				<path
+					d="M28.77 18.6667L19.4367 28L28.77 37.3334"
+					stroke="black"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+				<path
+					d="M38.1034 28L19.4367 28"
+					stroke="black"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
+			<symbol id="icon-search" viewBox="0 0 25 25">
+				<path
+					d="M20.37 21.7163L14.07 15.4163C13.57 15.8163 12.995 16.133 12.345 16.3663C11.695 16.5996 11.0034 16.7163 10.27 16.7163C8.45335 16.7163 6.91585 16.0871 5.65752 14.8288C4.39919 13.5705 3.77002 12.033 3.77002 10.2163C3.77002 8.39964 4.39919 6.86214 5.65752 5.60381C6.91585 4.34548 8.45335 3.71631 10.27 3.71631C12.0867 3.71631 13.6242 4.34548 14.8825 5.60381C16.1409 6.86214 16.77 8.39964 16.77 10.2163C16.77 10.9496 16.6534 11.6413 16.42 12.2913C16.1867 12.9413 15.87 13.5163 15.47 14.0163L21.77 20.3163L20.37 21.7163ZM10.27 14.7163C11.52 14.7163 12.5825 14.2788 13.4575 13.4038C14.3325 12.5288 14.77 11.4663 14.77 10.2163C14.77 8.96631 14.3325 7.90381 13.4575 7.02881C12.5825 6.15381 11.52 5.71631 10.27 5.71631C9.02002 5.71631 7.95752 6.15381 7.08252 7.02881C6.20752 7.90381 5.77002 8.96631 5.77002 10.2163C5.77002 11.4663 6.20752 12.5288 7.08252 13.4038C7.95752 14.2788 9.02002 14.7163 10.27 14.7163Z"
+					fill="#003A92"
+				/>
+			</symbol>
+			<symbol id="icon-arrow-down" viewBox="0 0 25 25">
+				<path
+					d="M12.77 16.4997L6.77002 10.4997L7.95327 9.31646L12.77 14.133L17.5868 9.31646L18.77 10.4997L12.77 16.4997Z"
+					fill="#003A92"
+				/>
+			</symbol>
+		</svg>
+		<header class="flex-shrink-0">
+			<div class="h-12 bg-primary-500 flex items-center">
+				<div class="flex items-center justify-end px-12.5 w-full h-full">
+					<nav class="h-full">
+						<ul class="flex items-center gap-x-6 pr-6 h-full">
+							<li>
+								<a
+									href="#"
+									class="text-white text-xs hover:underline underline-offset-2"
+									>Español</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-white text-xs hover:underline underline-offset-2"
+									>Login</a
+								>
+							</li>
+							<li>
+								<a
+									href="#"
+									class="text-white text-xs hover:underline underline-offset-2"
+									>Live Chat</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<div
+						class="flex items-center pl-6 border-l border-dark-400/20 h-full"
+					>
+						<a
+							href="#"
+							class="text-white text-xs hover:underline underline-offset-2"
+							>1-800-NAT-UNIV (628-8648)</a
+						>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="flex items-center justify-between w-full h-20">
+					<a href="./index.html" class="flex cursor-pointer">
+						<img
+							src="./src/assets/images/logo.png"
+							alt="logo"
+							class="w-auto h-13"
+						/>
+					</a>
+					<nav class="flex items-center gap-x-4">
+						<ul class="flex items-center gap-x-3">
+							<li>
+								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+									>Degrees and Programs
+									<svg class="icon-md">
+										<use href="#icon-arrow-down" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+									>Admissions and Financing
+									<svg class="icon-md">
+										<use href="#icon-arrow-down" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+									>About NU
+									<svg class="icon-md">
+										<use href="#icon-arrow-down" />
+									</svg>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+									>Student Resources
+									<svg class="icon-md">
+										<use href="#icon-arrow-down" />
+									</svg>
+								</a>
+							</li>
+						</ul>
+						<div class="flex items-center gap-x-4">
+							<button class="btn btn-primary">Apply Now</button>
+							<button class="btn btn-primary-outline">Request info</button>
+						</div>
+						<button class="btn btn-clear">
+							<svg class="icon-md">
+								<use href="#icon-search" />
+							</svg>
+						</button>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="flex-1 w-full">
+			<section class="pt-29 pb-22.5 relative">
+				<div
+					class="absolute left-0 bottom-0 w-full h-5/6 bg-gradient-primary z-0"
+				></div>
+				<div class="container relative z-1">
+					<h1>Do Life <i>AND</i> Learn</h1>
+					<div class="mt-12.5">
+						<img
+							class="w-full h-auto rounded-[29px]"
+							src="./src/assets/images/hero.png"
+							alt="hero"
+						/>
+					</div>
+					<div class="flex flex-col items-center mt-20">
+						<p class="text-white text-4xl/[150%] max-w-[985px] font-normal">
+							Launched in 2024,
+							<strong class="font-semibold">“ANDers”</strong> is an initiative
+							by National University to uplift individuals who are supporting
+							themselves and their families while striving to grow through
+							education. We’re redefining what higher education looks like by
+							making it more flexible, affordable, and built around real life.
+						</p>
+						<button class="btn btn-white btn-long h-15 mt-10">
+							SEE HOW WE DO IT
+						</button>
+					</div>
+				</div>
+			</section>
+
+			<section class="pt-35 pb-35 bg-white">
+				<div class="container relative">
+					<div class="flex items-end justify-between">
+						<div class="flex flex-col items-center max-w-[483px] w-full">
+							<h2>Not Your Traditional Student — And Proud of It</h2>
+							<p class="subtitle mt-2">
+								Dive into the stories of these individuals who turned bold
+								dreams into real life with our ANDers initiative.
+							</p>
+						</div>
+						<div class="flex items-center gap-x-2.5">
+							<button class="btn btn-clear swiper-custom-prev">
+								<svg class="icon size-14">
+									<use href="#icon-circle-with-arrow" />
+								</svg>
+							</button>
+							<button class="btn btn-clear swiper-custom-next">
+								<svg class="icon size-14 -scale-100">
+									<use href="#icon-circle-with-arrow" />
+								</svg>
+							</button>
+						</div>
+					</div>
+					<div
+						id="success-stories-slider"
+						class="swiper mt-12.5 flex gap-x-8 !mr-[calc((100vw-100%)/2*-1)]"
+					>
+						<div class="swiper-wrapper">
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+							<div
+								class="swiper-slide w-[247px]! p-[19px_17px] bg-primary-500 rounded-xl min-h-[328px] bg-gradient-card"
+							>
+								<div class="relative mb-3.5 rounded-xl overflow-hidden">
+									<img
+										src="./src/assets/images/card-1.png"
+										class="img-fluid rounded-top"
+										alt=""
+									/>
+									<svg
+										class="icon size-13.5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-aqua-300"
+									>
+										<use href="#icon-play" />
+									</svg>
+								</div>
+								<h4 class="text-aqua-300">Military Veterans & Super fathers</h4>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-scrollbar"></div>
+				</div>
+			</section>
+
+			<section class="pt-14 bg-[#F9FAFB]">
+				<div class="container">
+					<h2 class="text-center max-w-[410px] w-full mx-auto text-primary-900">
+						Celebrating
+						<span class="text-primary-400">
+							Strength, Sacrifice, and Success.</span
+						>
+					</h2>
+					<p
+						class="subtitle text-center mt-3.5 max-w-[466px] w-full mx-auto font-normal"
+					>
+						It's time to turn the spotlight to those building its future —
+						<i class="font-medium">The ANDers.</i>
+					</p>
+					<div
+						class="max-w-[662px] w-full mx-auto h-[361px] mt-16 rounded-lg overflow-hidden after:content-[''] after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-black/44 relative -mb-24"
+					>
+						<img
+							src="./src/assets/images/hero.png"
+							class="img-fluid h-auto w-full"
+							alt=""
+						/>
+						<div
+							class="flex flex-col items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-1 text-white"
+						>
+							<svg class="icon size-[97px]">
+								<use href="#icon-play" />
+							</svg>
+							<span class="text-white text-base font-semibold uppercase">
+								ANDERS ANTHEM 2025
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pt-48.5 pb-27 bg-[#E6EFF4]">
+				<div class="container">
+					<div class="flex gap-x-30 justify-center">
+						<div class="max-w-[350px] w-full">
+							<h3 class="text-aqua-900">
+								<span class="text-aqua-400">Since 2023</span>, our ANDers
+								initiative has already helped over thousands of individuals
+							</h3>
+						</div>
+						<div class="flex flex-col gap-y-12.5 max-w-[350px] w-full">
+							<div
+								class="flex item-start justify-between text-aqua-900 not-last-of-type:border-b border-b-aqua-900/47 not-last-of-type:pb-9"
+							>
+								<span
+									class="text-4xl text-aqua-400 font-besley font-semibold -tracking-0.3"
+									>10,000+</span
+								>
+								<span class="text-lg font-medium -tracking-0.3"
+									>ANDers graduated</span
+								>
+							</div>
+							<div
+								class="flex item-start justify-between text-aqua-900 not-last-of-type:border-b border-b-aqua-900/47 not-last-of-type:pb-9"
+							>
+								<span
+									class="text-4xl text-aqua-400 font-besley font-semibold -tracking-0.3"
+									>$3M+</span
+								>
+								<span class="text-lg font-medium -tracking-0.3"
+									>Scholarships Awarded</span
+								>
+							</div>
+							<div
+								class="flex item-start justify-between text-aqua-900 not-last-of-type:border-b border-b-aqua-900/47 not-last-of-type:pb-9"
+							>
+								<span
+									class="text-4xl text-aqua-400 font-besley font-semibold -tracking-0.3"
+									>$3M+</span
+								>
+								<span class="text-lg font-medium -tracking-0.3"
+									>Scholarships Awarded</span
+								>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-37.5">
+				<div class="container">
+					<div class="grid grid-cols-3 gap-x-17.5 gap-y-19.5">
+						<div>
+							<h2>How we help ANDers?</h2>
+							<p class="subtitle mt-3">
+								National University offers a holistic approach to student
+								support, well-being, and success called “Whole Human
+								Education™.”
+							</p>
+						</div>
+						<div class="flex flex-col border-b border-b-black/22 py-8 gap-y-3">
+							<div
+								class="flex items-center justify-center bg-gradient-icon rounded-[10px] size-11.5"
+							>
+								<svg class="icon size-5.5 text-white">
+									<use href="#icon-finance" />
+								</svg>
+							</div>
+							<h6 class="text-[21px] font-normal">Financial Support</h6>
+							<p class="text-primary-200 text-sm/[130%]">
+								1:1 assistance for navigating the financial aid process,
+								generous transfer credit policy, needs-based tuition reduction
+								grants, and scholarships.
+							</p>
+						</div>
+						<div class="flex flex-col border-b border-b-black/22 py-8 gap-y-3">
+							<div
+								class="flex items-center justify-center bg-gradient-icon rounded-[10px] size-11.5"
+							>
+								<svg class="icon size-7.5 text-white">
+									<use href="#icon-academic" />
+								</svg>
+							</div>
+							<h6 class="text-[21px] font-normal">Flexible Academics</h6>
+							<p class="text-primary-200 text-sm/[130%]">
+								4-, 8-, and 12-week online classes, unlimited free tutoring,
+								individual coaching, writing center, and 150+ academic degree
+								programs, credentials, and certificates.
+							</p>
+						</div>
+						<div class="flex flex-col border-b border-b-black/22 py-8 gap-y-3">
+							<div
+								class="flex items-center justify-center bg-gradient-icon rounded-[10px] size-11.5"
+							>
+								<svg class="icon size-7.5 text-white">
+									<use href="#icon-academic" />
+								</svg>
+							</div>
+							<h6 class="text-[21px] font-normal">Career Mentoring</h6>
+							<p class="text-primary-200 text-sm/[130%]">
+								NU Mentoring Network for individual student and alumni career
+								guidance, professional development opportunities, access to job
+								listings, and customized career support.
+							</p>
+						</div>
+						<div class="flex flex-col border-b border-b-black/22 py-8 gap-y-3">
+							<div
+								class="flex items-center justify-center bg-gradient-icon rounded-[10px] size-11.5"
+							>
+								<svg class="icon size-5.5 text-white">
+									<use href="#icon-finance" />
+								</svg>
+							</div>
+							<h6 class="text-[21px] font-normal">Wellness Focussed</h6>
+							<p class="text-primary-200 text-sm/[130%]">
+								Free virtual mental health counseling, access to wellness
+								resources, and Student Wellness Center offering 1:1 support for
+								life challenges.
+							</p>
+						</div>
+						<div class="flex flex-col border-b border-b-black/22 py-8 gap-y-3">
+							<div
+								class="flex items-center justify-center bg-gradient-icon rounded-[10px] size-11.5"
+							>
+								<svg class="icon size-5.5 text-white">
+									<use href="#icon-finance" />
+								</svg>
+							</div>
+							<h6 class="text-[21px] font-normal">Valuing Community</h6>
+							<p class="text-primary-200 text-sm/[130%]">
+								Web-based student networking platform, student clubs and
+								community service events, flexible online options to balance
+								work and family.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section
+				class="py-[158px] bg-gradient-to-r from-[#E6EFF4] to-transparent relative"
+			>
+				<img
+					src="./src/assets/images/shadow-listen-1.png"
+					class="absolute bottom-0 left-0 w-[395px] -z-0"
+					alt=""
+				/>
+				<img
+					src="./src/assets/images/shadow-listen-2.png"
+					class="absolute top-0 right-0 w-[550px] -z-0"
+					alt=""
+				/>
+				<div class="container relative z-1">
+					<div class="grid grid-cols-[1fr_minmax(200px,543px)] gap-x-17.5">
+						<div>
+							<h2
+								class="max-w-[425px] w-full text-aqua-400 font-bold leading-[125%]"
+							>
+								Become Inspired by Our Original Anthem
+								<i class="text-primary-500">The Whole You</i>
+							</h2>
+							<p class="subtitle mt-3.5 max-w-[397px] w-full">
+								This song honors the strength and determination of NU’s
+								“ANDers”— students pursuing higher education while managing
+								work, parenting, family caregiving, military service, and more.
+							</p>
+							<button class="btn btn-aqua btn-long font-medium mt-8">
+								LISTEN HERE
+							</button>
+						</div>
+						<div>
+							<img
+								src="./src/assets/images/record.png"
+								class="max-w-[470px] w-full"
+								alt="Record"
+							/>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="pt-27.5">
+				<div class="container">
+					<h2 class="text-center max-w-[396px] w-full mx-auto">
+						Check Out Our ANDer Collection!
+					</h2>
+					<div
+						class="grid grid-cols-4 mt-7.5 max-w-[920px] w-full mx-auto gap-x-8"
+					>
+						<div class="flex flex-col gap-y-[15px]">
+							<div class="h-[245px] w-full overflow-hidden rounded-lg">
+								<img
+									src="./src/assets/images/product-1.png"
+									class="w-full h-full object-cover"
+									alt="Product 1"
+								/>
+							</div>
+							<div>
+								<p class="text-primary-300 truncate text-base/[150%]">
+									District® - Young Mens Traditional T-Shirt
+								</p>
+								<span class="block text-black text-base/[150%] font-semibold"
+									>$23.90</span
+								>
+							</div>
+						</div>
+						<div class="flex flex-col gap-y-[15px]">
+							<div class="h-[245px] w-full overflow-hidden rounded-lg">
+								<img
+									src="./src/assets/images/product-1.png"
+									class="w-full h-full object-cover"
+									alt="Product 1"
+								/>
+							</div>
+							<div>
+								<p class="text-primary-300 truncate text-base/[150%]">
+									District® - Young Mens Traditional T-Shirt
+								</p>
+								<span class="block text-black text-base/[150%] font-semibold"
+									>$23.90</span
+								>
+							</div>
+						</div>
+						<div class="flex flex-col gap-y-[15px]">
+							<div class="h-[245px] w-full overflow-hidden rounded-lg">
+								<img
+									src="./src/assets/images/product-1.png"
+									class="w-full h-full object-cover"
+									alt="Product 1"
+								/>
+							</div>
+							<div>
+								<p class="text-primary-300 truncate text-base/[150%]">
+									District® - Young Mens Traditional T-Shirt
+								</p>
+								<span class="block text-black text-base/[150%] font-semibold"
+									>$23.90</span
+								>
+							</div>
+						</div>
+						<div class="flex flex-col gap-y-[15px]">
+							<div class="h-[245px] w-full overflow-hidden rounded-lg">
+								<img
+									src="./src/assets/images/product-1.png"
+									class="w-full h-full object-cover"
+									alt="Product 1"
+								/>
+							</div>
+							<div>
+								<p class="text-primary-300 truncate text-base/[150%]">
+									District® - Young Mens Traditional T-Shirt
+								</p>
+								<span class="block text-black text-base/[150%] font-semibold"
+									>$23.90</span
+								>
+							</div>
+						</div>
+					</div>
+					<div class="flex items-center justify-center mt-8">
+						<button class="btn btn-transparent btn-long text-aqua-400">
+							VIEW FULL STORE
+						</button>
+					</div>
+				</div>
+				<div
+					class="bg-primary-500 flex flex-col items-center justify-center gap-y-3.5 py-20 max-w-[822px] w-full mx-auto rounded-2.5xl mt-25 -mb-[170px] relative z-1"
+				>
+					<h3 class="max-w-[500px] w-full mx-auto text-white text-center">
+						Ready to Talk About Achieving Your Educational Goals in Life?
+					</h3>
+					<button class="btn btn-white px-9 h-[51px] text-sm font-medium">
+						TALK TO AN ADVISOR
+					</button>
+				</div>
+			</section>
+
+			<footer class="pt-[300px] pb-[70px] bg-dark-800">
+				<div
+					class="max-w-[1400px] mx-auto px-5 pb-13.5 flex gap-x-18 justify-start"
+				>
+					<div class="flex flex-col">
+						<div class="text-xl text-white uppercase font-bold mb-9.5">
+							About NU
+						</div>
+						<div class="flex">
+							<ul class="w-[138px] space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>About NU</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Faculty</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Locations</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Employment</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Contact Us</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>NU News</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Academic Schools/Colleges</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Academies at NU</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Accessibility</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex flex-col">
+						<div class="text-xl text-white uppercase font-bold mb-9.5">
+							Degrees & Programs
+						</div>
+						<div class="flex">
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Program Finder</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Bachelor’s Degrees</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Master’s Degree</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Doctoral Degrees</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Certificates</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Credentials</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Teaching & Education</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Business & Marketing</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Healthcare & Nursing</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2 text-nowrap"
+										>Social Science & Psychology</a
+									>
+								</li>
+							</ul>
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Engineering & Technology</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Arts & Humanities</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Criminal Justice & Law</a
+									>
+								</li>
+
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Science & Math</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex flex-col">
+						<div class="text-xl text-white uppercase font-bold mb-2.5">
+							Admissions &<br />
+							Finances
+						</div>
+						<div class="flex gap-x-10">
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Admissions</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Transfer Information</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>International Students</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Financial Aid</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Scholarships</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Tuition & Fees</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Cost of Attendance</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="flex flex-col ml-auto">
+						<div class="text-xl text-white uppercase font-bold mb-9.5">
+							Student Resources
+						</div>
+						<div class="flex gap-x-10">
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>FAQ</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Student Login</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Graduation</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Graduation Events</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Alumni</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Registrar</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Community</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Library</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Consumer Information</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Student Portal</a
+									>
+								</li>
+							</ul>
+							<ul class="space-y-3">
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>NU Store</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Civil Rights Policies</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										class="text-sm text-white font-bold hover:underline underline-offset-2"
+										>Course Catalog</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<hr class="max-w-[1360px] mx-auto border-t border-t-white" />
+				<div class="max-w-[1400px] mx-auto px-5 flex justify-between pt-15">
+					<div class="flex flex-col items-center gap-y-6">
+						<a href="./index.html">
+							<img
+								src="./src/assets/images/logo-footer.svg"
+								class="w-auto h-[85px]"
+								alt="National University"
+							/>
+						</a>
+						<p class="text-sm text-white">
+							9388 Lightwave Ave, San Diego, CA 92123
+						</p>
+					</div>
+					<div class="flex flex-col">
+						<div class="grid grid-cols-2 max-w-[350px] w-full gap-x-[17px]">
+							<button class="btn btn-aqua bg-aqua-500 btn-long text-[15px]">
+								Apply Now
+							</button>
+							<button class="btn btn-white-outline btn-long text-[15px]">
+								Request Info
+							</button>
+						</div>
+						<div>
+							<ul class="flex gap-x-2 mt-5 justify-center items-center">
+								<li>
+									<a href="#">
+										<img
+											src="./src/assets/images/socials/facebok.svg"
+											alt="Facebook"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="./src/assets/images/socials/twitter.svg"
+											alt="Twitter"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="./src/assets/images/socials/instagram.svg"
+											alt="Instagram"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="./src/assets/images/socials/linkedin.svg"
+											alt="LinkedIn"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="./src/assets/images/socials/youtube.svg"
+											alt="Youtube"
+										/>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img
+											src="./src/assets/images/socials/tiktok.svg"
+											alt="TikTok"
+										/>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="flex justify-center items-center gap-x-1 pt-15">
+					<p class="text-sm text-white">
+						© Copyright 2025 National University. All Rights Reserved.
+					</p>
+					<ul class="flex items-center gap-x-3.5 text-sm">
+						<li
+							class="relative after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-2 after:w-px after:h-[13px] after:bg-white last-of-type:after:hidden"
+						>
+							<a
+								href="#"
+								class="text-grey-100 hover:underline underline-offset-2"
+								>Privacy Policy</a
+							>
+						</li>
+						<li
+							class="relative after:content-[''] after:absolute after:top-1/2 after:-translate-y-1/2 after:-right-2 after:w-px after:h-[13px] after:bg-white last-of-type:after:hidden"
+						>
+							<a
+								href="#"
+								class="text-grey-100 hover:underline underline-offset-2"
+								>Consumer Information</a
+							>
+						</li>
+					</ul>
+				</div>
+			</footer>
+		</main>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+		<script src="./src/js/main.js"></script>
+	</body>
+</html>
