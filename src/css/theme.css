@@ -59,4 +59,5 @@
 
 	/* Breakpoints */
 	--breakpoint-xs: 30rem;
+	--breakpoint-header: 1220px;
 }

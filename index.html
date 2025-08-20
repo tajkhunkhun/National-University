@@ -22,6 +22,16 @@
 			viewBox="0 0 100 100"
 			class="absolute -z-10 opacity-0 pointer-events-none hidden"
 		>
+			<symbol id="icon-close" viewBox="0 0 25 25" fill="none">
+				<path
+					d="M4.936 6.73864C4.53826 6.3409 4.53826 5.69604 4.936 5.2983C5.33374 4.90056 5.9786 4.90056 6.37634 5.2983L19.3394 18.2613C19.7371 18.6591 19.7371 19.304 19.3394 19.7017C18.9417 20.0994 18.2968 20.0994 17.8991 19.7017L4.936 6.73864Z"
+					fill="black"
+				/>
+				<path
+					d="M6.37634 19.7017C5.9786 20.0994 5.33374 20.0994 4.936 19.7017C4.53826 19.304 4.53826 18.6591 4.936 18.2613L17.8991 5.2983C18.2968 4.90056 18.9417 4.90056 19.3394 5.2983C19.7371 5.69604 19.7371 6.3409 19.3394 6.73864L6.37634 19.7017Z"
+					fill="black"
+				/>
+			</symbol>
 			<symbol id="icon-message" viewBox="0 0 25 24" fill="none">
 				<path
 					d="M21.4127 11.5C21.4161 12.8199 21.1078 14.1219 20.5127 15.3C19.8071 16.7117 18.7224 17.8992 17.3801 18.7293C16.0378 19.5594 14.4909 19.9994 12.9127 20C11.5928 20.0034 10.2908 19.6951 9.11269 19.1L3.41269 21L5.31269 15.3C4.71762 14.1219 4.40925 12.8199 4.41269 11.5C4.4133 9.92176 4.8533 8.37485 5.68341 7.03255C6.51352 5.69025 7.70094 4.60557 9.11269 3.9C10.2908 3.30493 11.5928 2.99656 12.9127 3H13.4127C15.497 3.11499 17.4657 3.99476 18.9418 5.47086C20.4179 6.94695 21.2977 8.91565 21.4127 11V11.5Z"
@@ -101,11 +111,32 @@
 					fill="#003A92"
 				/>
 			</symbol>
+			<symbol id="icon-menu" viewBox="0 0 25 25" fill="none">
+				<path
+					d="M5.06152 12.5H15.4824"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+				<path
+					d="M5.06152 6.5H19.2139"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+				<path
+					d="M5.06152 18.5H19.2139"
+					stroke="black"
+					stroke-width="2"
+					stroke-linecap="round"
+					stroke-linejoin="round"
+				/>
+			</symbol>
 		</svg>
 
-		<header
-			class="flex-shrink-0 border-b border-b-[#F2EDE9] max-md:shadow-header max-md:border-b-0 sticky top-0 z-99999 bg-white"
-		>
+		<header class="flex-shrink-0 sticky top-0 z-99999 bg-white">
 			<div
 				class="h-12 bg-primary-500 flex items-center [.active_&]:h-0 overflow-hidden transition-all duration-300"
 			>
@@ -161,7 +192,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="container">
+			<div
+				class="container relative max-md:shadow-header border-b border-b-[#F2EDE9] max-md:border-b-0"
+			>
 				<div class="flex items-center justify-between w-full h-20">
 					<a href="./index.html" class="flex cursor-pointer">
 						<img
@@ -170,10 +203,37 @@
 							class="w-auto h-13 max-sm:h-11"
 						/>
 					</a>
-					<nav class="flex items-center gap-x-4">
-						<ul class="flex items-center gap-x-3 max-[1220px]:hidden">
+					<div
+						class="mobile-menu-overlay pointer-events-none opacity-0 absolute bg-primary-900/70 top-full left-0 w-full -z-2 [&.active-menu]:opacity-100 h-screen transition-all duration-700"
+					></div>
+					<nav
+						class="mobile-menu flex items-center gap-x-4 max-header:bg-white max-header:flex-col transition-all ease-in-out duration-500 max-header:absolute max-header:top-full max-header:right-0 mt-px max-header:-z-1 max-header:px-5 max-header:rounded-b-2xl max-sm:mt-0 max-header:w-[390px] max-sm:w-full max-header:max-h-0 overflow-hidden"
+					>
+						<div
+							class="header:hidden flex relative w-full mb-12 max-header:mt-10"
+						>
+							<input
+								id="search-input"
+								name="search-input"
+								type="text"
+								placeholder="Search"
+								class="w-full rounded-2xl border border-primary-900/20 px-4 text-dark-800 h-[49px] text-base placeholder:text-dark-800 outline-none"
+							/>
+							<button
+								class="btn btn-clear p-2 absolute top-1/2 -translate-y-1/2 right-2.5"
+							>
+								<svg class="icon-md">
+									<use href="#icon-search" />
+								</svg>
+							</button>
+						</div>
+						<ul
+							class="flex items-center gap-3 max-header:flex-col max-header:gap-8 max-header:mb-12"
+						>
 							<li>
-								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+								<a
+									href="#"
+									class="text-dark-800 flex items-center gap-x-1 max-header:text-xl"
 									>Degrees and Programs
 									<svg class="icon-md">
 										<use href="#icon-arrow-down" />
@@ -181,7 +241,9 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+								<a
+									href="#"
+									class="text-dark-800 flex items-center gap-x-1 max-header:text-xl"
 									>Admissions and Financing
 									<svg class="icon-md">
 										<use href="#icon-arrow-down" />
@@ -189,7 +251,9 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+								<a
+									href="#"
+									class="text-dark-800 flex items-center gap-x-1 max-header:text-xl"
 									>About NU
 									<svg class="icon-md">
 										<use href="#icon-arrow-down" />
@@ -197,7 +261,9 @@
 								</a>
 							</li>
 							<li>
-								<a href="#" class="text-dark-800 flex items-center gap-x-1"
+								<a
+									href="#"
+									class="text-dark-800 flex items-center gap-x-1 max-header:text-xl"
 									>Student Resources
 									<svg class="icon-md">
 										<use href="#icon-arrow-down" />
@@ -205,51 +271,32 @@
 								</a>
 							</li>
 						</ul>
-						<div class="flex items-center gap-x-4 max-md:hidden">
+						<div
+							class="flex items-center gap-x-4 max-xs:grid max-xs:grid-cols-2 max-xs:w-full max-header:pb-10"
+						>
 							<button class="btn btn-primary normal-case rounded-2xl">
 								Apply Now
 							</button>
 							<button class="btn btn-primary-outline normal-case rounded-2xl">
 								Request info
 							</button>
-							<button class="btn btn-clear">
+							<button class="btn btn-clear max-header:hidden">
 								<svg class="icon-md">
 									<use href="#icon-search" />
 								</svg>
 							</button>
 						</div>
-						<button class="btn btn-clear p-2 hidden max-[1220px]:block">
-							<svg
-								width="25"
-								height="25"
-								viewBox="0 0 25 25"
-								fill="none"
-								xmlns="http://www.w3.org/2000/svg"
-							>
-								<path
-									d="M5.06152 12.5H15.4824"
-									stroke="black"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M5.06152 6.5H19.2139"
-									stroke="black"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-								<path
-									d="M5.06152 18.5H19.2139"
-									stroke="black"
-									stroke-width="2"
-									stroke-linecap="round"
-									stroke-linejoin="round"
-								/>
-							</svg>
-						</button>
 					</nav>
+					<button
+						class="mobile-menu-button btn btn-clear p-2 hidden max-header:block -mr-2"
+					>
+						<svg class="icon-close icon-md hidden [.active-menu_&]:block">
+							<use href="#icon-close" />
+						</svg>
+						<svg class="icon-menu icon-md block [.active-menu_&]:hidden">
+							<use href="#icon-menu" />
+						</svg>
+					</button>
 				</div>
 			</div>
 		</header>
