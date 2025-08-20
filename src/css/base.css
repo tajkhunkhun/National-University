@@ -19,9 +19,7 @@
 		text-align: center;
 		font-family: var(--font-besley);
 		letter-spacing: -0.03em;
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
+		@apply max-sm:text-left max-sm:text-primary-900 max-sm:text-5xl/[120%];
 	}
 	h2 {
 		font-size: 36px;
@@ -30,9 +28,7 @@
 		letter-spacing: -0.03em;
 		color: var(--color-primary-900);
 		font-family: var(--font-besley);
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
+		@apply max-sm:text-2xl/[120%];
 	}
 	h3 {
 		font-size: 28px;
@@ -41,9 +37,7 @@
 		letter-spacing: -0.03em;
 		color: var(--color-primary-900);
 		font-family: var(--font-besley);
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
+		@apply max-sm:text-xl/[120%];
 	}
 	h4 {
 		font-size: 24px;
@@ -63,17 +57,12 @@
 		line-height: 130%;
 		color: var(--color-primary-300);
 		font-family: var(--font-sans);
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
+		@apply max-sm:text-base/[150%];
 	}
 
 	/* Navigation styles */
 	nav ul li a {
 		font-family: var(--font-sans);
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
@@ -81,9 +70,6 @@
 	/* Button text styles */
 	button {
 		font-family: var(--font-sans);
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
@@ -92,9 +78,6 @@
 	section h2,
 	section h3 {
 		font-family: var(--font-besley);
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}
@@ -102,9 +85,6 @@
 	/* Card headings */
 	.swiper-slide h4 {
 		font-family: var(--font-sans);
-		font-feature-settings:
-			'liga' 1,
-			'kern' 1;
 		-webkit-font-smoothing: antialiased;
 		-moz-osx-font-smoothing: grayscale;
 	}

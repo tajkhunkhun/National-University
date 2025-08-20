@@ -53,4 +53,10 @@
 		rgba(255, 255, 255, 0.15);
 
 	--tracking-0_3: 0.03em;
+
+	/* Shadows */
+	--shadow-header: 0px 4px 4px rgba(0, 0, 0, 0.04);
+
+	/* Breakpoints */
+	--breakpoint-xs: 30rem;
 }

@@ -1,6 +1,6 @@
 @layer components {
 	.btn {
-		@apply px-[25px] h-12 text-dark-800 rounded-2xl cursor-pointer text-base font-semibold;
+		@apply px-[25px] h-12 text-dark-800 rounded-lg cursor-pointer text-base font-semibold max-sm:text-sm uppercase;
 	}
 	.btn-primary {
 		@apply bg-primary-500 text-white;
@@ -43,10 +43,11 @@
 	/* Swiper Scrollbar Styles */
 	.swiper-scrollbar {
 		@apply bg-aqua-400/17!;
-		position: relative;
 		border-radius: 12px;
-		height: 5px;
+		height: 5px !important;
+		margin-top: 0 !important;
 		bottom: -50px !important;
+		@apply max-sm:bottom-auto max-sm:-top-5!;
 	}
 
 	.swiper-scrollbar-drag {
