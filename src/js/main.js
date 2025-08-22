@@ -7,29 +7,43 @@ document.addEventListener('DOMContentLoaded', () => {
 	mobileMenuButton.addEventListener('click', () => {
 		const isActive = mobileMenu.classList.contains('active-menu')
 		const mobileMenuHeight = mobileMenu.scrollHeight
-		console.log(mobileMenuHeight)
+
 		if (!isActive) {
-			mobileMenu.classList.add('active-menu')
-			mobileMenuButton.classList.add('active-menu')
-			mobileMenu.style.maxHeight = `${mobileMenuHeight}px`
-			mobileMenuOverlay.classList.add('active-menu')
+			showMobileMenu(mobileMenuHeight)
 		} else {
-			mobileMenu.classList.remove('active-menu')
-			mobileMenuButton.classList.remove('active-menu')
-			mobileMenu.style.maxHeight = '0px'
-			mobileMenuOverlay.classList.remove('active-menu')
+			hideMobileMenu()
 		}
 	})
+
+	const hideMobileMenu = () => {
+		mobileMenu.classList.remove('active-menu')
+		mobileMenuButton.classList.remove('active-menu')
+		mobileMenu.style.maxHeight = '0px'
+		mobileMenuOverlay.classList.remove('active-menu')
+	}
+
+	const showMobileMenu = mobileMenuHeight => {
+		mobileMenu.classList.add('active-menu')
+		mobileMenuButton.classList.add('active-menu')
+		mobileMenu.style.maxHeight = `${mobileMenuHeight}px`
+		mobileMenuOverlay.classList.add('active-menu')
+	}
 
 	document.addEventListener('click', e => {
 		if (
 			!mobileMenu.contains(e.target) &&
 			!mobileMenuButton.contains(e.target)
 		) {
-			mobileMenu.classList.remove('active-menu')
-			mobileMenuButton.classList.remove('active-menu')
-			mobileMenu.style.maxHeight = '0px'
+			hideMobileMenu()
+		}
+	})
+
+	window.addEventListener('resize', () => {
+		if (window.innerWidth > 1220) {
+			mobileMenu.style.maxHeight = ''
 			mobileMenuOverlay.classList.remove('active-menu')
+			mobileMenuButton.classList.remove('active-menu')
+			mobileMenu.classList.remove('active-menu')
 		}
 	})
 
